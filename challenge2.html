@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code</title>
+</head>
+<style>
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(79, 140, 119);
+    height: 100vh;
+}
+.qrsection{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    gap: 5px;
+}
+img{
+    border-radius: 20px;
+    margin-top: 5px;
+    
+}
+h3{
+    color: aliceblue;
+    text-align: center;
+}
+p{
+    margin-top: -7px;
+    padding:10px;
+     color: rgb(109, 110, 110);
+     font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.card{
+    width:20% ;
+     background-color: rgb(8, 6, 3);
+      border-radius: 20px 20px;
+}
+@media screen and (max-width: 600px) {
+  .main {
+    background-color: rgb(249, 249, 244);
+  }
+ .card {
+     width: 100%;  
+ }
+ p{
+     text-align: center;
+ }
+}
+@media screen and (max-width: 912px) and (min-width: 700px) {
+  .main {
+    background-color: aliceblue;
+  }
+  .card {
+     width: 80%;  
+ }
+ p{
+     text-align: center;
+ }
+}
+
+
+
+</style>
+<body>
+    <div class="main">
+        <div class="card" >
+        <div class="qrsection">
+            <img src="frame.png" alt="qrcode" width="95%" height="100%"  >
+        </div>
+        <div class="content" >
+            <h3 style=" text-transform: capitalize; padding-left: 10px;"> Please scan the QR Code</h3>
+            <p> Hi,My name is Naveed i'm a Web developer.For more details please scan the QR</p>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
